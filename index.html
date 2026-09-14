@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#05050b">
+  <title>SANDERVERSE UNITE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/mini_logo.png">
+</head>
+<body>
+  <div id="start-overlay" class="overlay">
+    <div class="modal">
+      <img id="logo-banner" class="modal-logo" src="assets/logo_banner.png" alt="SanderVerse">
+      <h1 class="neon-title">SANDERVERSE UNITE</h1>
+      <p class="subtitle">MOBA TÁTICO MOBILE 1v3</p>
+      <button id="btn-start" class="btn-neon" type="button">ENTRAR NA ARENA</button>
+      <span class="hint">Gire o dispositivo para a horizontal · Toque para tela cheia</span>
+    </div>
+  </div>
+
+  <div id="end-overlay" class="overlay hidden">
+    <div class="modal">
+      <h1 id="end-title" class="neon-title">FIM DE PARTIDA</h1>
+      <p id="end-score" class="subtitle">Sander 0 × 0 Calopsitas</p>
+      <button id="btn-restart" class="btn-neon" type="button">JOGAR DE NOVO</button>
+    </div>
+  </div>
+
+  <div id="hud-top">
+    <div class="team-score player-score">
+      <img class="hud-face" src="assets/sander.png" alt="Sander">
+      <span class="label">SANDER</span>
+      <span id="score-player" class="val">0</span>
+    </div>
+    <div class="match-timer-container">
+      <div id="match-timer">10:00</div>
+      <div id="aura-status">BUFF: <span id="aura-multiplier">x1.00</span></div>
+    </div>
+    <div class="team-score enemy-score">
+      <span class="label">CALOPSITAS</span>
+      <span id="score-enemy" class="val">0</span>
+    </div>
+  </div>
+
+  <div id="announcement" class="hidden">FRENESÍ DE ENERGIA</div>
+  <div id="countdown-3d" class="hidden">10</div>
+
+  <canvas id="gameCanvas"></canvas>
+  <canvas id="minimapCanvas" width="176" height="100"></canvas>
+
+  <div id="touch-controls">
+    <div id="joystick-zone">
+      <div id="joystick-base">
+        <div id="joystick-stick"></div>
+      </div>
+    </div>
+
+    <div id="actions-zone">
+      <div class="action-row radial-skills">
+        <button id="btn-skill-q" class="btn-skill" data-skill="q" type="button">
+          <span class="skill-key">Q</span>
+          <span class="skill-name">Tornados</span>
+          <div class="cooldown-overlay"></div>
+        </button>
+        <button id="btn-skill-w" class="btn-skill" data-skill="w" type="button">
+          <span class="skill-key">W</span>
+          <span class="skill-name">Diamante</span>
+          <div class="cooldown-overlay"></div>
+        </button>
+        <button id="btn-skill-e" class="btn-skill" data-skill="e" type="button">
+          <span class="skill-key">E</span>
+          <span class="skill-name">Resplandor</span>
+          <div class="cooldown-overlay"></div>
+        </button>
+      </div>
+      <div class="action-row primary-actions">
+        <button id="btn-action-flash" class="btn-subaction" type="button" title="Salto / Depósito de Aura">⚡</button>
+        <button id="btn-attack" class="btn-main-attack" type="button">ATACAR</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
