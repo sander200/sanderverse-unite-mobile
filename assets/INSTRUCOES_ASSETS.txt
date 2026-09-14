@@ -1,0 +1,19 @@
+Lista exata dos arquivos esperados pela engine SANDERVERSE UNITE
+(coloque-os nesta pasta assets/ com os nomes abaixo)
+
+- logo_banner.png          Banner do menu
+- map_arena.png            Cenário do campo MOBA
+- sander.png               Retrato de Sander
+- sheet_sander.png         Spritesheet 4x4 do protagonista Sander
+- calopsita_polo.png       Polo Yin-Yang corpo inteiro
+- sheet_sanderai.png       Spritesheet 4x4 de habilidades Polo
+- calopsita_lupe.png       Lupe Celestial corpo inteiro
+- sheet_lupe.png           Spritesheet 4x4 de habilidades Lupe
+- calopsita_topete.png     Némesis/Topete armadura dracônica
+- sheet_topete.png         Spritesheet 4x4 Némesis combate
+- aura_energy.png          Orbe de Calopsita Flutuante com bochecha vermelha
+- mini_logo.png            Emblema cósmico brilhante do SanderVerse
+
+O motor já inclui fallback vetorial se algum arquivo estiver ausente.
+Novas artes podem substituir estes arquivos sem alterar o código,
+desde que o nome e a grade 4x4 das sheets sejam mantidos.

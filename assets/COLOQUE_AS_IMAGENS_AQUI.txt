@@ -1,0 +1,14 @@
+COLOQUE AS IMAGENS AQUI (nomes obrigatórios)
+
+logo_banner.png
+map_arena.png
+sander.png
+sheet_sander.png
+calopsita_polo.png
+sheet_sanderai.png
+calopsita_lupe.png
+sheet_lupe.png
+calopsita_topete.png
+sheet_topete.png
+aura_energy.png
+mini_logo.png
